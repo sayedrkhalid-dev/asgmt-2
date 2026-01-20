@@ -53,7 +53,7 @@
     box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.6);
   }
   70% {
-    box-shadow: 0 0 0 12px rgba(0, 255, 13, 0);
+    box-shadow: 0 0 0 12px rgba(0, 255, 136, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
