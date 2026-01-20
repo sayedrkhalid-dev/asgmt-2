@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .section-tittle {
     font-size: var(--text-4xl);
   }
