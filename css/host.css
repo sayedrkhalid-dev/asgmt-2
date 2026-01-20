@@ -1,0 +1,35 @@
+.host {
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(#351165, #351165) padding-box,
+    linear-gradient(var(--gradient-1)) border-box;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.host-brief {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.host-social-links {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-8);
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .host {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .host-social-links {
+    justify-content: center;
+  }
+}

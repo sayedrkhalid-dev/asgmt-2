@@ -1,0 +1,80 @@
+#service-section {
+  background-color: #230e3d;
+}
+
+#service-section > .container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "first  second second"
+    "first  third  third"
+    "fourth fourth fifth";
+  gap: var(--gap-6);
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background:
+    linear-gradient(#351165, #351165) padding-box,
+    linear-gradient(var(--gradient-1)) border-box;
+
+  border: 2px solid transparent;
+  border-radius: 24px;
+  padding: 2rem;
+  position: relative;
+}
+
+.service-card img {
+  width: fit-content;
+}
+
+.service-card:nth-child(1) {
+  grid-area: first;
+}
+
+.service-card:nth-child(2) {
+  grid-area: second;
+}
+
+.service-card:nth-child(3) {
+  grid-area: third;
+}
+
+.service-card:nth-child(4) {
+  grid-area: fourth;
+}
+
+.service-card:nth-child(5) {
+  grid-area: fifth;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth";
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "first   first"
+      "second  third"
+      "fourth  fourth"
+      "fifth   fifth";
+  }
+}
