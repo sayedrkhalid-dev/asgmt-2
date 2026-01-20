@@ -66,20 +66,3 @@
   align-items: center;
   gap: 1rem;
 }
-
-/* Responsive */
-@media screen and (max-width: 576px) {
-  .nav-links,
-  .subscribe-btn {
-    display: none;
-  }
-
-  .menu-icon {
-    display: inline-block;
-  }
-
-  .some-info {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-}

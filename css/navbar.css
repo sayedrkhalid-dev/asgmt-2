@@ -43,6 +43,8 @@
 
 .menu-icon {
   display: none;
+  font-size: var(--text-2xl);
+  opacity: 0.9;
 }
 
 .subscribe-btn {
@@ -101,5 +103,22 @@
 
   100% {
     transform: translateX(0px);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-links,
+  .subscribe-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .some-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
