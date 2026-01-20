@@ -34,11 +34,18 @@
 .nav-links li a {
   background: linear-gradient(var(--gradient-1));
   background-clip: text;
-  transition: 0.3s;
+  -webkit-background-clip: text;
+  color: var(--white-10);
+
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: transparent;
+  filter: drop-shadow(0 0 6px var(--green-30))
+    drop-shadow(0 0 14px var(--green-20));
 }
 
 .menu-icon {
