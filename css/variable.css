@@ -24,37 +24,12 @@
   --text-extrabold: 800;
   --text-black: 900;
 
-  /* Spacing and gap related variables */
-  --gap-fixed: 4px;
-
-  --gap-1: var(--gap-fixed); /* gap: 4px */
-  --gap-2: calc(2 * var(--gap-fixed)); /* gap: 8px */
-  --gap-3: calc(3 * var(--gap-fixed)); /* gap: 12px */
-  --gap-4: calc(4 * var(--gap-fixed)); /* gap: 16px */
-  --gap-5: calc(5 * var(--gap-fixed)); /* gap: 20px */
-  --gap-6: calc(6 * var(--gap-fixed)); /* gap: 24px */
-  --gap-7: calc(7 * var(--gap-fixed)); /* gap: 28px */
-  --gap-8: calc(8 * var(--gap-fixed)); /* gap: 32px */
-  --gap-9: calc(9 * var(--gap-fixed)); /* gap: 36px */
-  --gap-10: calc(10 * var(--gap-fixed)); /* gap: 40px */
-  --gap-20: calc(20 * var(--gap-fixed)); /* gap: 80px */
-  --gap-30: calc(30 * var(--gap-fixed)); /* gap: 120px */
-  --gap-40: calc(40 * var(--gap-fixed)); /* gap: 160px */
-  --gap-50: calc(50 * var(--gap-fixed)); /* gap: 200px */
-  --gap-60: calc(60 * var(--gap-fixed)); /* gap: 240px */
-  --gap-70: calc(70 * var(--gap-fixed)); /* gap: 280px */
-  --gap-80: calc(80 * var(--gap-fixed)); /* gap: 320px */
-  --gap-90: calc(90 * var(--gap-fixed)); /* gap: 360px */
-  --gap-100: calc(100 * var(--gap-fixed)); /* gap: 400px */
-
-  --nav-height: 70px;
-
   /* colors */
   --purple-100: #1a0b2e;
   --purple-80: #9100f8;
   --pink-70: #db489f;
   --pink-60: #fb09b4;
-  --orange-50: rgb(251, 103, 65);
+  --orange-50: #fb6741;
   --yellow-40: #f7e93f;
   --yellow-30: #ecf955;
   --green-20: #00ff88;
@@ -64,6 +39,9 @@
   /* Gradients */
   --gradient-1:
     to bottom left, var(--purple-80), var(--pink-60), var(--yellow-40);
+
+  /* Box shaddow */
+  --shaddow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 0 18px rgba(0, 255, 136, 0.45);
 
   /* Border Radius / Rounded Corners */
   --radius-none: 0px;

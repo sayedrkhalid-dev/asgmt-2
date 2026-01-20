@@ -35,8 +35,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: var(--gap-2);
-  padding: var(--gap-3) var(--gap-4);
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
   border-radius: var(--radius-full);
 
   font-size: var(--text-base);
@@ -56,4 +56,36 @@
   border: 2px solid var(--teal-90);
 }
 
+.service-card,
+.episode-card,
+.host-card,
+.btn {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    backgroundd 0.35s ease;
+  will-change: transform;
+}
 
+.service-card:hover,
+.episode-card:hover,
+.host-card:hover,
+.btn:hover {
+  /* transform: translateY(-8px) scale(1.01); */
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: var(--shaddow);
+}
+
+/* Responsive */
+@media screen and (max-width: 1201px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-tittle {
+    font-size: var(--text-4xl);
+  }
+}

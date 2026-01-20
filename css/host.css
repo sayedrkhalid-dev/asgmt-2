@@ -1,4 +1,4 @@
-.host {
+.host-card {
   display: flex;
   align-items: center;
   background:
@@ -19,12 +19,12 @@
 .host-social-links {
   display: flex;
   align-items: center;
-  gap: var(--gap-8);
+  gap: 2rem;
 }
 
 /* Responsive */
 @media screen and (max-width: 576px) {
-  .host {
+  .host-card {
     flex-direction: column;
     text-align: center;
   }
